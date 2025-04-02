@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 5
+-->
+
+<!DOCTYPE animales [
+    <!ELEMENT animales (animal*)>
+    <!ELEMENT animal (#PCDATA)>
+]>
+
+<animales>
+    <animal>Caniche</animal>
+    <animal>Siamés</animal>
+</animales>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 1
+-->
+
+<!DOCTYPE cuento [
+    <!ELEMENT cuento (personajes, trama, etiqueta+, precio)>
+    <!ATTLIST cuento cod ID #REQUIRED>
+    <!ATTLIST cuento titulo CDATA #REQUIRED>
+    <!ATTLIST cuento genero CDATA #REQUIRED>
+
+    <!ELEMENT personajes (personaje+)>
+    <!ELEMENT personaje (nombre, genero, descripcion?, descripcion_fisica?, imagen?)>
+    <!ATTLIST personaje id ID #REQUIRED>
+    <!ATTLIST personaje tipo (principal | secundario | antagonista) #REQUIRED>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT descripcion_fisica (#PCDATA)>
+    <!ELEMENT imagen (#PCDATA)>
+
+    <!ELEMENT trama (#PCDATA)>
+
+    <!ELEMENT etiqueta EMPTY>
+    <!ATTLIST etiqueta nombre CDATA #REQUIRED>
+
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio moneda (eur | usd | gbp) #REQUIRED>
+]>
+
+<!-- Estructura del cuento 2 -->
+<cuento cod="H02" titulo="Harry Potter y la Cámara Secreta" genero="fantasía">
+    <personajes>
+        <personaje id="P1" tipo="principal">
+            <nombre>Harry Potter</nombre>
+            <genero>M</genero>
+            <descripcion>El joven mago que regresa a Hogwarts para su segundo año.</descripcion>
+            <descripcion_fisica>Cabello negro, gafas y una cicatriz en la frente.</descripcion_fisica>
+        </personaje>
+        <personaje id="P2" tipo="antagonista">
+            <nombre>Tom Riddle</nombre>
+            <genero>M</genero>
+            <imagen>tom_riddle.png</imagen>
+        </personaje>
+    </personajes>
+    <trama>Harry descubre el misterio detrás de la Cámara Secreta y el monstruo que acecha en Hogwarts.</trama>
+    <etiqueta nombre="magia"/>
+    <etiqueta nombre="misterio"/>
+    <precio moneda="eur">21.50</precio>
+</cuento>

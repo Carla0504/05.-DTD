@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 1
+-->
+
+<!DOCTYPE cuento [
+    <!ELEMENT cuento (personajes, trama, etiqueta+, precio)>
+    <!ATTLIST cuento cod ID #REQUIRED>
+    <!ATTLIST cuento titulo CDATA #REQUIRED>
+    <!ATTLIST cuento genero CDATA #REQUIRED>
+
+    <!ELEMENT personajes (personaje+)>
+    <!ELEMENT personaje (nombre, genero, descripcion?, descripcion_fisica?, imagen?)>
+    <!ATTLIST personaje id ID #REQUIRED>
+    <!ATTLIST personaje tipo (principal | secundario | antagonista) #REQUIRED>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT descripcion_fisica (#PCDATA)>
+    <!ELEMENT imagen (#PCDATA)>
+
+    <!ELEMENT trama (#PCDATA)>
+
+    <!ELEMENT etiqueta EMPTY>
+    <!ATTLIST etiqueta nombre CDATA #REQUIRED>
+
+    <!ELEMENT precio (#PCDATA)>
+    <!ATTLIST precio moneda (eur | usd | gbp) #REQUIRED>
+]>
+
+<!-- Estructura del cuento 1 -->
+<cuento cod="H01" titulo="Harry Potter y la piedra filosofal" genero="fantasía">
+    <personajes>
+        <personaje id="P1" tipo="principal">
+            <nombre>Harry Potter</nombre>
+            <genero>M</genero>
+            <descripcion>Un joven mago que descubre su destino.</descripcion>
+            <descripcion_fisica>Cabello negro, gafas y una cicatriz en la frente.</descripcion_fisica>
+        </personaje>
+        <personaje id="P2" tipo="antagonista">
+            <nombre>Voldemort</nombre>
+            <genero>M</genero>
+            <imagen>voldemort.png</imagen>
+        </personaje>
+    </personajes>
+    <trama>Harry Potter descubre que es un mago y debe enfrentarse al malvado Voldemort.</trama>
+    <etiqueta nombre="magia"/>
+    <etiqueta nombre="aventura"/>
+    <precio moneda="eur">19.99</precio>
+</cuento>

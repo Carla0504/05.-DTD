@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 31/03/2025
+Ejercicio: Ejercicio 2
+-->
+
+<!-- Liga de baloncesto -->
+<liga>
+    <jugador>
+        <nombre>LeBron</nombre>
+        <apellidos>James</apellidos>
+        <equipo>
+            <ciudad>Los Angeles</ciudad>
+            <presidente>
+                <NombrePresidente>Jeanie</NombrePresidente>
+                <ApellidosPresidente>Buss</ApellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>39</edad>
+    </jugador>
+
+    <jugador>
+        <nombre>Stephen</nombre>
+        <apellidos>Curry</apellidos>
+        <equipo>
+            <ciudad>San Francisco</ciudad>
+            <presidente>
+                <NombrePresidente>Joe</NombrePresidente>
+                <ApellidosPresidente>Lacob</ApellidosPresidente>
+            </presidente>
+        </autor>
+        <edad>36</edad>
+    </jugador>
+
+    <jugador>
+        <nombre>Kevin</nombre>
+        <apellidos>Durant</apellidos>
+        <equipo>
+            <ciudad>Phoenix</ciudad>
+            <presidente>
+                <NombrePresidente>Mat</NombrePresidente>
+                <ApellidosPresidente>Ishbia</ApellidosPresidente>
+            </presidente>
+        </autor>
+        <edad>35</edad>
+    </jugador>
+</liga>
+
+
+
+

@@ -1,0 +1,12 @@
+<!DOCTYPE liga [
+    <!ELEMENT liga (jugador+)>
+    <!ELEMENT jugador (nombre, apellidos, equipo, edad)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT equipo (ciudad, presidente)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT presidente (NombrePresidente, ApellidosPresidente)>
+    <!ELEMENT NombrePresidente (#PCDATA)>
+    <!ELEMENT ApellidosPresidente (#PCDATA)>
+    <!ELEMENT edad (#PCDATA)>
+]>

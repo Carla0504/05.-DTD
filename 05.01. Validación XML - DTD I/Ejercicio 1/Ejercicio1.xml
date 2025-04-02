@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 31/03/2025
+Ejercicio: Ejercicio 1
+-->
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo, editorial, autor, numeroPaginas)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT numeroPaginas (#PCDATA)>
+]>
+
+<!-- Biblioteca de libros -->
+<biblioteca>
+    <libro>
+        <titulo>Harry Potter y la piedra filosofal</titulo>
+        <editorial>Bloomsbury</editorial>
+        <autor>
+            <nombre>J.K</nombre>
+            <apellidos>Rowling</apellidos>
+        </autor>
+        <numeroPaginas>223</numeroPaginas>
+    </libro>
+
+    <libro>
+        <titulo>Harry Potter y la camara secreta</titulo>
+        <editorial>Bloomsbury</editorial>
+        <autor>
+            <nombre>J.K</nombre>
+            <apellidos>Rowling</apellidos>
+        </autor>
+        <numeroPaginas>251</numeroPaginas>
+    </libro>
+
+    <libro>
+        <titulo>Harry Potter y el prisionero de Azkaban</titulo>
+        <editorial>Bloomsbury</editorial>
+        <autor>
+            <nombre>J.K</nombre>
+            <apellidos>Rowling</apellidos>
+        </autor>
+        <numeroPaginas>317</numeroPaginas>
+    </libro>
+</biblioteca>
+
+
+
+

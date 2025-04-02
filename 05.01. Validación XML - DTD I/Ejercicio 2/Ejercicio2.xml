@@ -30,7 +30,7 @@ Ejercicio: Ejercicio 2
                 <NombrePresidente>Joe</NombrePresidente>
                 <ApellidosPresidente>Lacob</ApellidosPresidente>
             </presidente>
-        </autor>
+        </equipo>
         <edad>36</edad>
     </jugador>
 
@@ -43,7 +43,7 @@ Ejercicio: Ejercicio 2
                 <NombrePresidente>Mat</NombrePresidente>
                 <ApellidosPresidente>Ishbia</ApellidosPresidente>
             </presidente>
-        </autor>
+        </equipo>
         <edad>35</edad>
     </jugador>
 </liga>

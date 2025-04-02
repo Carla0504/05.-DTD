@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 2
+-->
+<!DOCTYPE equipos [
+    <!ELEMENT equipos (equipo+)>
+    <!ELEMENT equipo (nombre, titulos, posicion, quinteto)>
+    <!ATTLIST equipo conferencia CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT titulos (#PCDATA)>
+    <!ELEMENT posicion (#PCDATA)>
+    <!ELEMENT quinteto (#PCDATA)>
+]>
+
+<!-- Equipo NBA -->
+<equipos>
+    <equipo conferencia="este">
+        <nombre>Miami Heat</nombre>
+        <titulos>3</titulos>
+        <posicion>5</posicion>
+        <quinteto>Goran Dragić, Dwyane Wade, LeBron James, Chris Bosh, Chris Andersen</quinteto>
+    </equipo>
+
+    <equipo conferencia="oeste">
+        <nombre>Los Angeles Lakers</nombre>
+        <titulos>17</titulos>
+        <posicion>3</posicion>
+        <quinteto>LeBron James, Anthony Davis, Russell Westbrook, Austin Reaves, Lonnie Walker</quinteto>
+    </equipo>
+
+    <equipo conferencia="este">
+        <nombre>Boston Celtics</nombre>
+        <titulos>17</titulos>
+        <posicion>1</posicion>
+        <quinteto>Jayson Tatum, Jaylen Brown, Marcus Smart, Al Horford, Robert Williams</quinteto>
+    </equipo>
+
+    <equipo conferencia="oeste">
+        <nombre>Golden State Warriors</nombre>
+        <titulos>6</titulos>
+        <posicion>2</posicion>
+        <quinteto>Stephen Curry, Klay Thompson, Andrew Wiggins, Draymond Green, Kevon Looney</quinteto>
+    </equipo>
+</equipos>

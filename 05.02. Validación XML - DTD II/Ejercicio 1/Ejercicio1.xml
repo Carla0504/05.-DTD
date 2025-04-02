@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 1
+-->
+<!DOCTYPE factura [
+    <!ELEMENT factura (datos-emisor, datos-cliente, detalle-factura)>
+    <!ATTLIST factura numero CDATA #REQUIRED fecha CDATA #REQUIRED>
+    <!ELEMENT datos-emisor (nombre, cif, telefono)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT datos-cliente (nombre, cif, telefono)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT detalle-factura (linea+)>
+    <!ELEMENT linea (descripcion, cantidad, pvp, oferta?)>
+    <!ATTLIST linea codigo-articulo CDATA #REQUIRED tipo CDATA #REQUIRED importe CDATA #REQUIRED>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT pvp (#PCDATA)>
+    <!ELEMENT oferta EMPTY>
+]>
+
+<!-- Factura electronica -->
+<factura numero="543542" fecha="02/04/2025">
+    <datos-emisor>
+        <nombre>Librería El Saber</nombre>
+        <cif>A12345678</cif>
+        <telefono>987654321</telefono>
+    </datos-emisor>
+    
+    <datos-cliente>
+        <nombre>Biblioteca Central</nombre>
+        <cif>B87654321</cif>
+        <telefono>912345678</telefono>
+    </datos-cliente>
+    
+    <detalle-factura>
+        <linea codigo-articulo="A001" tipo="Libro" importe="25.00">
+            <descripcion>El Principito</descripcion>
+            <cantidad>3</cantidad>
+            <pvp>10.00</pvp>
+            <oferta/>
+        </linea>
+        <linea codigo-articulo="A002" tipo="DVD" importe="15.00">
+            <descripcion>La Era de Hielo</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>7.50</pvp>
+        </linea>
+        <linea codigo-articulo="A003" tipo="Varios" importe="30.00">
+            <descripcion>Set de marcapáginas</descripcion>
+            <cantidad>10</cantidad>
+            <pvp>3.00</pvp>
+        </linea>
+    </detalle-factura>
+</factura>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 3
+-->
+
+<!DOCTYPE aeropuertos [
+    <!ELEMENT aeropuertos (aeropuerto+)>
+    <!ELEMENT aeropuerto (nombre, cerrado)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cerrado (#PCDATA)>
+]>
+
+<aeropuertos>
+    <aeropuerto>
+        <nombre>Berlín Schonefeld (SFX)</nombre>
+    </aeropuerto>
+    
+    <aeropuerto>
+        <nombre>Berlín Tempelhof (THF)</nombre>
+        <cerrado/>
+    </aeropuerto>
+</aeropuertos>

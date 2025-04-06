@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 1
+-->
+
+<!DOCTYPE persona [
+    <!ELEMENT persona (nombre)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ATTLIST persona dni CDATA #REQUIRED>
+]>
+
+<persona dni="03141592E">
+    <nombre>Juan Pérez</nombre>
+</persona>

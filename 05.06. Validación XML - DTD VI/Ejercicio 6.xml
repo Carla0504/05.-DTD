@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 1
+-->
+
+<!DOCTYPE futbol [
+    <!ELEMENT futbol ((jugador | equipo)*)>
+    <!ELEMENT jugador EMPTY>
+    <!ATTLIST jugador nombre CDATA #REQUIRED>
+    <!ATTLIST jugador codigo ID #REQUIRED>
+    <!ELEMENT equipo EMPTY>
+    <!ATTLIST equipo nombre CDATA #REQUIRED>
+    <!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+
+<futbol>
+    <jugador nombre="Alfredo Di Stefano" codigo="ads"/>
+    <jugador nombre="Edson Arantes do Nascimento" codigo="ean"/>
+    <jugador nombre="Diego Armando Maradona" codigo="dam"/>
+    <jugador nombre="Johan Cruyff" codigo="jc"/>
+    <equipo nombre="Societa Sportiva Calcio Napoli" jugadores="dam"/>
+    <equipo nombre="Futbol Club Barcelona" jugadores="jc,dam"/>
+</futbol>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: Carla Fernández Alcázar
+Curso: DAW1
+Fecha: 07/04/2025
+Ejercicio: Ejercicio 5
+-->
+
+<!DOCTYPE albumesMortadelo [
+    <!ELEMENT albumesMortadelo (album+)>
+    <!ATTLIST album nombre CDATA #REQUIRED>
+    <!ATTLIST album fecha CDATA #REQUIRED>
+]>
+
+<albumesMortadelo>
+    <album nombre="El sulfato atomico" fecha="1969"/>
+    <album nombre="La caja de diez cerrojos" fecha="1971"/>
+    <album nombre="El otro yo del profesor Bacterio" fecha="1973"/>
+    <album nombre="Los cacharros majaretas" fecha="1974"/>
+</albumesMortadelo>
